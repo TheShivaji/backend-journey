@@ -1,0 +1,76 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f5f5f5;
+    padding: 1rem;
+
+    .feed-container{
+        max-width: 350px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .user{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        margin-top: 1rem;
+
+
+        img{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+    }
+
+    .posts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        .post{
+            display: flex;
+            flex-direction: column;
+            
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .actions{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        button{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        svg{
+            width: 1rem;
+            aspect-ratio: 1/1;
+            color: #ccc;
+        }
+    }
+}
