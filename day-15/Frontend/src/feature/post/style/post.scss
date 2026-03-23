@@ -1,0 +1,100 @@
+
+@import "createpost";
+
+.feed-page  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 1.5rem;
+    min-height: 100vh;
+
+    .feed-container {
+        width: 100%;
+        max-width: 420px;
+        background: #fff;
+        border: 1px solid #e4e6eb;
+        border-radius: 12px;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+        .post-card {
+            width: 100%;
+            max-width: 420px;
+            background: #fff;
+            border: 1px solid #e4e6eb;
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin-bottom: 0.8rem;
+
+        img {
+            width: 2.2rem;
+            height: 2.2rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        span {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #333;
+        }
+    }
+
+    .post {
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #000;
+
+        img {
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+        }
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 0.8rem;
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.2rem;
+        }
+
+        svg {
+            width: 1.4rem;
+            height: 1.4rem;
+            color: #666;
+            transition: color 0.2s ease;
+        }
+
+        /* hover */
+        button:hover svg {
+            color: #ff3040;
+        }
+
+        /* liked state */
+        .liked {
+            svg {
+                color: #ff3040;
+                fill: #ff3040;
+            }
+        }
+    }
+}
